@@ -58,7 +58,7 @@ file_types = (
 )
 cpp_include = ("*.h", "*.c", "*.cpp", "*.tcc")
 py_include = ("*.py",)
-ignore_types = (".ico", ".png", ".woff", ".woff2", "", ".ttf", ".otf")
+ignore_types = (".ico", ".png", ".woff", ".woff2", "", ".ttf", ".otf", ".pcf")
 
 LINT_FILE_CHECKS = []
 LINT_CONTENT_CHECKS = []
@@ -630,7 +630,7 @@ def lint_trailing_whitespace(fname, match):
         "esphome/components/lock/lock.h",
         "esphome/components/mqtt/mqtt_component.h",
         "esphome/components/number/number.h",
-        "esphome/components/text/text.h",
+        "esphome/components/one_wire/one_wire.h",
         "esphome/components/output/binary_output.h",
         "esphome/components/output/float_output.h",
         "esphome/components/nextion/nextion_base.h",
@@ -638,6 +638,7 @@ def lint_trailing_whitespace(fname, match):
         "esphome/components/sensor/sensor.h",
         "esphome/components/stepper/stepper.h",
         "esphome/components/switch/switch.h",
+        "esphome/components/text/text.h",
         "esphome/components/text_sensor/text_sensor.h",
         "esphome/components/valve/valve.h",
         "esphome/core/component.h",
